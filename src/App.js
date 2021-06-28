@@ -48,9 +48,11 @@ function App() {
                         key={coin.id}
                         name={coin.name}
                         image={coin.image}
+                        volume={coin.total_volume}
                         symbol={coin.symbol}
-                        volume={coin.market_cap}
                         price={coin.current_price}
+                        priceChange={coin.price_change_percentage_24h}
+                        marketcap={coin.market_cap}
                     />
                 );
             })}
